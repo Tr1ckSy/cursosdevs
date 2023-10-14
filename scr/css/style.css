@@ -45,7 +45,9 @@ li a {
     text-decoration: none;
     padding: 20px 10px;
 }
-
+button {
+	cursor: pointer;
+}
 a button {
 
     color: #fff;
@@ -145,9 +147,12 @@ p {
 }
 
 .icon-hole img {
-
+ transition: transform 0.3s ease;
     width: 40px;
 
+}
+.icon-hole img:hover {
+	 transform: scale(1.1);
 }
 footer{
 	 margin: 0 auto;
@@ -158,7 +163,7 @@ footer{
     max-width: 80%;
 }
 .footer{
-	display: flex;
+		display: flex;
 	justify-content: space-between;
 	gap: 200px;
 	align-items: center;
@@ -169,7 +174,7 @@ footer{
     border-radius: 5px;
     background: #0073f6;
     border: none;
-    padding: 14px 25px;
+    padding: 14px 35px;
 }
 .footer p {
 	width: 60%;
