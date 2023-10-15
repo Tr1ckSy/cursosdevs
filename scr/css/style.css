@@ -1,5 +1,5 @@
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,7 +12,8 @@ body {
 }
 
 header {
-
+background: rgb(135,0,246);
+background: linear-gradient(180deg, rgba(135,0,246,0.16650578688506656) 100%, rgba(14,17,22,1) 100%);
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 
 }
@@ -25,7 +26,7 @@ nav {
     display: flex;
     align-items: center;
    margin: 0 auto;
-    width: 90%;
+    width: 85%;
     justify-content: space-between;
 
 }
@@ -49,11 +50,11 @@ button {
 	cursor: pointer;
 }
 a button {
-
+box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     color: #fff;
     font-weight: 900;
     border-radius: 5px;
-    background: #0073f6;
+    background:#423a94;
     border: none;
     padding: 14px 35px;
 }
@@ -62,8 +63,8 @@ a button {
 
 
 main {
-    margin: 0 auto;
-    width: 60%;
+background: rgb(135,0,246);
+background: linear-gradient(180deg, rgba(135,0,246,0.16650578688506656) 0%, rgba(14,17,22,1) 100%);
 
     display: flex;
     align-items: center;
@@ -73,37 +74,36 @@ main {
    
 }
 
-.container {
-    display: flex;
-    flex-direction: column;
-}
 
-.container h1 {
+.title {
+
+	font-family: "Poppins";
 	white-space: nowrap;
     background: linear-gradient(to left, #833ab4,#090979);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 5rem;
     font-weight: 900;
+
     
 }
-.container-card p {
-	font-size: 1rem;
-}
+
+
 
 .container-card button {
-
+box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     color: #fff;
     font-weight: 900;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
     border-radius: 5px;
-    background: #0b0f19;
-    border: 1px solid #0073f6;
+    background: #0e1116;
+    border: 1px solid #423a94;
     padding: 14px 35px;
+     transition: 0.2s ease;
 }
 .container button:hover {
 
-	background: rgb(0,115,246);
-background: linear-gradient(90deg, rgba(0,115,246,1) 0%, rgba(9,9,121,1) 100%, rgba(0,55,117,1) 100%);
+	background:  #423a94;
 }
 p {
     padding-bottom: 20px;
@@ -121,17 +121,24 @@ p {
 }
 
 .hole-img img {
+	
+	 transition: transform 0.3s ease;
 	box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     border-radius: 6px;
-    max-width: 450px;
+    max-width: 500px;
 }
-
+.hole-img img:hover {
+	transform: scale(1.1);
+}
 .hole {
     margin: 0 auto;
     width: 90%;
 }
 .hole h1 {
 	font-size: 1.5rem;
+}
+.hole p {
+	line-height: 20px;
 }
 .hole-center {
 
@@ -142,12 +149,14 @@ p {
 }
 
 .icon-hole {
+	justify-content: center;
+	flex-wrap: wrap;
     display: flex;
-    gap: 12px;
+    gap: 25px;
 }
 
 .icon-hole img {
- transition: transform 0.3s ease;
+    transition: transform 0.3s ease;
     width: 40px;
 
 }
@@ -156,18 +165,14 @@ p {
 }
 footer{
 	 margin: 0 auto;
-   height: 80vh;
+   height: 20vh;
    display: flex;
    align-items: center;
    justify-content: center;
+   text-align: center;
     max-width: 80%;
 }
-.footer{
-		display: flex;
-	justify-content: space-between;
-	gap: 200px;
-	align-items: center;
-}
+
 .class-footer button{
   color: #fff;
     font-weight: 900;
@@ -176,9 +181,7 @@ footer{
     border: none;
     padding: 14px 35px;
 }
-.footer p {
-	width: 60%;
-}
+
 
 
 @media screen and (max-width: 768px) {
@@ -191,11 +194,11 @@ footer{
 
     .hole-img img {
         border-radius: 6px;
-        max-width: 300px;
+        max-width: 400px;
     }
 
     .icon-hole img {
-        width: 16px;
+        width: 30px;
         fill: #fff;
     }
   
@@ -220,5 +223,8 @@ footer{
     .hole2 {
 	display: flex;
 	flex-direction: column-reverse;
+}
+.hole h1 {
+	margin-bottom: 10px;
 }
 }
